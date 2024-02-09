@@ -42,8 +42,6 @@ pipeline {
 				-Dquarkus.container-image.push=true
 
 				'''
-				}
-
 			}
 		}
 	}
