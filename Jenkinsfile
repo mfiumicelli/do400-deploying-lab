@@ -8,6 +8,7 @@ pipeline {
 			steps {
 				sh "./mvnw verify"
 			}
+		{
 		stage("Build & Push Image") {
 
 			steps {
@@ -41,7 +42,6 @@ pipeline {
 				-Dquarkus.container-image.push=true
 
 				'''
-
 				}
 
 			}
